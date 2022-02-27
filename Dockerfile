@@ -1,7 +1,7 @@
 #设置依赖的镜像
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS env1
 #设置镜像创建者
-MAINTAINER hanhongyong
+MAINTAINER oneg1
 #设置工作目录
 WORKDIR /app
 #copy文件到app目录下
