@@ -14,5 +14,5 @@ WORKDIR /app
 COPY --from=env1 /app .
 #预执行命令，容器创建完成后执行的命令，使得程序能够执行
 ENTRYPOINT ["dotnet", "dev-certs https --clean"]
-ENTRYPOINT ["dotnet", "dev-certs https --trust"]
+ENTRYPOINT ["dotnet", "dev-certs https"]
 ENTRYPOINT ["dotnet", "Microsoft365_E5_Renew_X.dll"]
